@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluento - AI Destekli Dil Öğrenme Uygulaması</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- EmailJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Animated background elements -->
+        <div class="animated-bg">
+            <div class="floating-element floating-1"></div>
+            <div class="floating-element floating-2"></div>
+            <div class="floating-element floating-3"></div>
+            <div class="floating-element floating-4"></div>
+            <div class="floating-element floating-5"></div>
+            <div class="floating-element floating-6"></div>
+            <div class="floating-element floating-7"></div>
+        </div>
+        
+        <div class="content">
+            <!-- Hero section with title only -->
+            <div class="hero-section">
+                <h1 class="animated-title">Fluento</h1>
+                <p class="subtitle">AI destekli dil konuşma uygulaması yakında geliyor!</p>
+            </div>
+
+            <!-- Main content area - side by side layout -->
+            <div class="main-content">
+                <!-- Left side - Waitlist form -->
+                <div class="waitlist-section">
+                    <div class="waitlist-container">
+                        <h2>Erken Erişim İçin<br>Waitlist'e Katılın</h2>
+                        <p class="waitlist-description">
+                            Fluento ile AI destekli dil öğrenme deneyimini ilk yaşayanlar arasında olun. 
+                            Uygulama hazır olduğunda sizi hemen bilgilendireceğiz!
+                        </p>
+                        <form class="email-form" id="waitlistForm">
+                            <div class="input-group">
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    placeholder="Email adresinizi girin" 
+                                    required
+                                >
+                                <button type="submit" class="cta-button">
+                                    <span>Waitlist'e Katıl</span>
+                                    <div class="button-glow"></div>
+                                </button>
+                            </div>
+                        </form>
+                        <p class="privacy-note">Email adresinizi sadece uygulama güncellemeleri için kullanacağız.</p>
+                    </div>
+                </div>
+                
+                <!-- Right side - App showcase -->
+                <div class="showcase-section">
+                    <div class="image-container desktop-view">
+                        <div class="app-image floating-image">
+                            <div class="image-placeholder">
+                                <h3>Fluento</h3>
+                                <p>Konuşma Pratiği</p>
+                                <div class="mock-interface">
+                                    <div class="mock-header"></div>
+                                    <div class="mock-content">
+                                        <div class="mock-bubble"></div>
+                                        <div class="mock-bubble"></div>
+                                        <div class="mock-bubble"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-image floating-image">
+                            <div class="image-placeholder">
+                                <h3>AI Tutor</h3>
+                                <p>Kişisel Öğretmen</p>
+                                <div class="mock-interface">
+                                    <div class="mock-header"></div>
+                                    <div class="mock-content">
+                                        <div class="mock-progress"></div>
+                                        <div class="mock-lesson"></div>
+                                        <div class="mock-lesson"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-image floating-image">
+                            <div class="image-placeholder">
+                                <h3>İlerle</h3>
+                                <p>Seviye Takibi</p>
+                                <div class="mock-interface">
+                                    <div class="mock-header"></div>
+                                    <div class="mock-content">
+                                        <div class="mock-chart"></div>
+                                        <div class="mock-stats"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mobil carousel -->
+                    <div class="carousel-container mobile-view">
+                        <div class="carousel">
+                            <div class="carousel-item active">
+                                <div class="image-placeholder">
+                                    <h3>Fluento</h3>
+                                    <p>Konuşma Pratiği</p>
+                                    <div class="mock-interface">
+                                        <div class="mock-header"></div>
+                                        <div class="mock-content">
+                                            <div class="mock-bubble"></div>
+                                            <div class="mock-bubble"></div>
+                                            <div class="mock-bubble"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="image-placeholder">
+                                    <h3>AI Tutor</h3>
+                                    <p>Kişisel Öğretmen</p>
+                                    <div class="mock-interface">
+                                        <div class="mock-header"></div>
+                                        <div class="mock-content">
+                                            <div class="mock-progress"></div>
+                                            <div class="mock-lesson"></div>
+                                            <div class="mock-lesson"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="image-placeholder">
+                                    <h3>İlerle</h3>
+                                    <p>Seviye Takibi</p>
+                                    <div class="mock-interface">
+                                        <div class="mock-header"></div>
+                                        <div class="mock-content">
+                                            <div class="mock-chart"></div>
+                                            <div class="mock-stats"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
